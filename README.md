@@ -1,48 +1,50 @@
-# Problem Description
+# Pythonic Palindromes
+
+## Problem Description
 
 Given a string `s`, determine whether it is a palindrome or not using Python. A string is considered a palindrome if it reads the same backward as forward. For example, "racecar" is a palindrome, while "hello world" is not.
 
 Your task is to implement a function `is_palindrome(s: str) -> bool` that takes in a string `s` and returns a boolean value indicating whether `s` is a palindrome or not. 
 
-# Signature
+## Signature
 
 ```python
 def is_palindrome(s: str) -> bool:
     pass
 ```
 
-# Constraints
+## Constraints
 
 - The input string `s` consists only of printable ASCII characters. 
 - The length of `s` is at most 1000. 
 
-# Examples
+## Examples
 
-## Input
+### Input
 
 ```python
 s = "racecar"
 ```
 
-## Output 
+### Output 
 
 ```python
 True
 ```
 
-## Input
+### Input
 
 ```python
 s = "hello world"
 ```
 
-## Output
+### Output
 
 ```python
 False
 ```
 
-# Solution 
+## Solution 
 
 A possible solution to this problem is to remove all non-alphanumeric characters from the input string and convert it to lowercase. We can then check if the resulting string is equal to its reverse. This can be done using Python's slicing syntax, which allows us to reverse the string by using a step of -1.
 
